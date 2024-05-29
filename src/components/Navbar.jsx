@@ -30,13 +30,13 @@ const Navbar = () => {
      
       <div className="logo-container">
         <Avatar src={icon} size="large" />
-        <Typography.Title level={2} className="logo">  <Link to="/">CryptoSphere</Link>  </Typography.Title>
+        <Typography.Title level={2} className="logo">  <Link to="/">Crypto</Link>  </Typography.Title>
         <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}><MenuOutlined /></Button>
       </div>
       {activeMenu && (
         <Menu theme="dark" defaultSelectedKeys={['home']}>
           <Menu.Item key="home" icon={<HomeOutlined />}> <Link to="/">Home</Link> </Menu.Item>
-          <Menu.Item key="cryptocurrencies" icon={<FundOutlined />}> <Link to="/cryptocurrencies">CryptoSphere</Link> </Menu.Item>
+          <Menu.Item key="cryptocurrencies" icon={<FundOutlined />}> <Link to="/cryptocurrencies">Cryptocurrencies</Link> </Menu.Item>
           <Menu.Item key="news" icon={<BulbOutlined />}> <Link to="/news">News</Link> </Menu.Item>
           <Menu.Item key="linechart" icon={<DollarOutlined />}> <Link to="/bitcoin">Bitcoin</Link> </Menu.Item>
         </Menu>
